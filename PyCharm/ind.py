@@ -70,8 +70,8 @@ def find_way(numbers, nw):
             result.append(h)
 
     # Проверка на наличие записей
-    if not result:
-        return None
+    if len(result) == 0:
+        print('Запись не найдена')
 
     # Возвратить список выбранных маршрутов.
     return result
@@ -94,7 +94,7 @@ def main():
             break
 
         elif command == 'add':
-            # Запросить данные о маршрутах.
+            # Запросить данные о маршруте.
             way = get_way()
 
             # Добавить словарь в список.
