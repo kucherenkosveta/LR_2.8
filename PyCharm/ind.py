@@ -70,10 +70,10 @@ def find_way(numbers, nw):
             result.append(h)
 
     # Проверка на наличие записей
-    if len(result) == 0:
-        return print("Запись не найдена")
+    if not result:
+        return None
 
-    # Возвратить список выбранных работников.
+    # Возвратить список выбранных маршрутов.
     return result
 
 
@@ -94,7 +94,7 @@ def main():
             break
 
         elif command == 'add':
-            # Запросить данные о работнике.
+            # Запросить данные о маршрутах.
             way = get_way()
 
             # Добавить словарь в список.
@@ -113,7 +113,7 @@ def main():
             display_way(selected)
 
         elif command == 'help':
-            # Вывести справку о работе с программой.
+            # Вывести справку.
             print("Список команд:\n")
             print("add - добавить маршрут;")
             print("list - вывести список маршрутов;")
