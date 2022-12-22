@@ -71,7 +71,7 @@ def find_way(numbers, nw):
 
     # Проверка на наличие записей
     if len(result) == 0:
-        print('Запись не найдена')
+        return None
 
     # Возвратить список выбранных маршрутов.
     return result
